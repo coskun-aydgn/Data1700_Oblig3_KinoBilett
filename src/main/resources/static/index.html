@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +20,7 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
+    <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html">Kino</a>
         </div>
@@ -19,50 +31,53 @@
         </ul>
     </div>
 </nav>
-<h1> Bestilling av kinobiletter</h1>
-<div class="row">
-    <div class="col-lg-4">
-        <form class="form">
-            <div class="form-group">
-                <p>Velg Categori</p>
-                <div id="filmerCategori" class="dropdown"></div>
-            </div>
-            <div class="form-group">
-                <p>Velg Film</p>
-                <div id="filmNvn" class="dropdown"></div>
-            </div>
-            <div class="form-group">
-                <label for="antall">Antall</label>
-                <span style="color: red" id="feilMeldingAntall"></span>
-                <input type="number" class="form-control" id="antall"/>
-            </div>
-            <div class="form-group">
-                <label for="fornavn">Fornavn</label>
-                <span style="color: red" id="feilMeldingfornavn"></span>
-                <input type="text" class="form-control" id="fornavn"/>
-            </div>
-            <div class="form-group">
-                <label for="etternavn">Etternavn</label>
-                <span style="color: red" id="feilMeldingetternavn"></span>
-                <input type="text" class="form-control" id="etternavn"/>
-            </div>
-            <div class="form-group">
-                <label for="tlfnr">Telefon</label>
-                <span style="color: red" id="feilMeldingtlfnr"></span>
-                <input type="text" class="form-control" id="tlfnr"/>
-            </div>
-            <div class="form-group">
-                <label for="email">E-post</label>
-                <span style="color: red" id="feilMeldingemail"></span>
-                <input type="text" class="form-control" id="email"/>
-            </div>
-            <div class="form-group"><br>
-                <button class="btn btn-primary btn-block" onclick="validateogSubmit()">Kjøp billett</button>
-            </div>
-        </form>
-    </div>
-    <div id="resultat">
 
+<div class="container">
+    <h1> Bestilling av kinobiletter</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <form class="form">
+                <div class="form-group">
+                    <p>Velg Categori</p>
+                    <div id="filmerCategori" class="dropdown"></div>
+                </div>
+                <div class="form-group">
+                    <p>Velg Film</p>
+                    <div id="filmNvn" class="dropdown"></div>
+                </div>
+                <div class="form-group">
+                    <label for="antall">Antall</label>
+                    <span style="color: red" id="feilMeldingAntall"></span>
+                    <input type="number" class="form-control" id="antall"/>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <span style="color: red" id="feilMeldingfornavn"></span>
+                    <input type="text" class="form-control" id="fornavn"/>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <span style="color: red" id="feilMeldingetternavn"></span>
+                    <input type="text" class="form-control" id="etternavn"/>
+                </div>
+                <div class="form-group">
+                    <label for="tlfnr">Telefon</label>
+                    <span style="color: red" id="feilMeldingtlfnr"></span>
+                    <input type="text" class="form-control" id="tlfnr"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-post</label>
+                    <span style="color: red" id="feilMeldingemail"></span>
+                    <input type="text" class="form-control" id="email"/>
+                </div>
+                <div class="form-group"><br>
+                    <button class="btn btn-primary btn-block" onclick="validateogSubmit()">Kjøp billett</button>
+                </div>
+            </form>
+        </div>
+        <div id="resultat">
+
+        </div>
     </div>
 </div>
 </div>

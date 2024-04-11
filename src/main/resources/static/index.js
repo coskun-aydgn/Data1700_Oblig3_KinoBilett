@@ -51,7 +51,6 @@ function validateogSubmit() {
     const etternavn=$("#etternavn").val();
     const telefonnr=$("#tlfnr").val();
     const email=$("#email").val();
-    inputControl(filmnavn,antall,fornavn,etternavn,telefonnr,email);
 
     if(filmnavn === null || antall === "" || fornavn === "" || etternavn === "" || telefonnr === "" || email === ""){
         $("#feilMeldingAntall").text('"Må skriv noe inn i antall"');
@@ -61,7 +60,7 @@ function validateogSubmit() {
         $("#feilMeldingemail").text('"Må skriv noe inn i telefonnr"');
         console.log("empty control is OK");
         return;
-    };
+    }
     if ( antall<=0) {
         alert("Skriv gyldig tall for billetter.")
         return;
@@ -99,6 +98,8 @@ function validateogSubmit() {
     let biletList={}
     $.get("/hentBiletter", function (data){
         biletList=data;
+
+        window.location.href="/biletTabel.html";
     })
-    $("#resultat").text(biletList)
+
 }
